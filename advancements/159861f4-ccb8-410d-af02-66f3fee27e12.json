@@ -1,0 +1,75 @@
+{
+  "minecraft:recipes/misc/book": {
+    "criteria": {
+      "has_the_recipe": "2020-06-03 20:36:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/lava_bucket": {
+    "criteria": {
+      "lava_bucket": "2020-06-03 20:56:22 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/composter": {
+    "criteria": {
+      "has_wood_slab": "2020-06-03 20:46:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/redstone_lamp": {
+    "criteria": {
+      "has_glowstone": "2020-06-03 20:48:18 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cake": {
+    "criteria": {
+      "has_egg": "2020-06-03 20:47:14 +0000"
+    },
+    "done": true
+  },
+  "minecraft:main/correct_guess": {
+    "criteria": {
+      "impossible": "2020-06-03 20:46:01 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/barrel": {
+    "criteria": {
+      "has_wood_slab": "2020-06-03 20:46:43 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/brewing/cauldron": {
+    "criteria": {
+      "has_water_bucket": "2020-06-03 20:46:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:main/root": {
+    "criteria": {
+      "tick": "2020-06-03 20:36:35 +0000"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:plains": "2020-06-03 20:40:10 +0000"
+    },
+    "done": false
+  },
+  "minecraft:main/play_game": {
+    "criteria": {
+      "impossible": "2020-06-03 20:39:52 +0000"
+    },
+    "done": true
+  },
+  "minecraft:main/win_game": {
+    "criteria": {
+      "impossible": "2020-06-03 20:47:50 +0000"
+    },
+    "done": true
+  },
+  "DataVersion": 2230
+}

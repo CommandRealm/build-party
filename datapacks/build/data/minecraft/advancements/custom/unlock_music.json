@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:music_disc_pigstep"},"title":{"text":"Exclusive Music Track","color":"#522929","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Complete all advancements within this row to unlock.","color":"dark_red","bold":false}},"parent":"custom/jump_on_bed","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

@@ -1,0 +1,11 @@
+tp @s[tag=playing,scores={player_id=1}] -1072 67 0
+tp @s[tag=playing,scores={player_id=2}] -1000 67 0
+tp @s[tag=playing,scores={player_id=3}] -928 67 0
+tp @s[tag=playing,scores={player_id=4}] -856 67 0
+tp @s[tag=playing,scores={player_id=5}] -1072 67 72
+tp @s[tag=playing,scores={player_id=6}] -1000 67 72
+tp @s[tag=playing,scores={player_id=7}] -928 67 72
+tp @s[tag=playing,scores={player_id=8}] -856 67 72
+tp @s[tag=playing,scores={player_id=9}] -1072 67 144
+tp @s[tag=playing,scores={player_id=10}] -1000 67 144
+tp @s[tag=playing,scores={player_id=11}] -928 67 144

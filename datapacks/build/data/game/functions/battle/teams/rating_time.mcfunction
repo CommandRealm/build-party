@@ -1,0 +1,5 @@
+execute if entity @a[tag=playing,team=blue,tag=show_build] run tellraw @a[tag=playing,tag=!show_build] [{"text":"Please rate blue team's build.","color":"aqua"}]
+execute if entity @a[tag=playing,team=orange,tag=show_build] run tellraw @a[tag=playing,tag=!show_build] [{"text":"Please rate orange team's build.","color":"#ff4e00"}]
+execute if entity @a[tag=playing,team=green,tag=show_build] run tellraw @a[tag=playing,tag=!show_build] [{"text":"Please rate green team's build.","color":"green"}]
+execute if entity @a[tag=playing,team=pink,tag=show_build] run tellraw @a[tag=playing,tag=!show_build] [{"text":"Please rate pink team's build.","color":"light_purple"}]
+execute if entity @a[tag=playing,team=gray,tag=show_build] run tellraw @a[tag=playing,tag=!show_build] [{"text":"Please rate gray team's build.","color":"dark_gray"}]

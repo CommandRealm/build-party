@@ -1,0 +1,3 @@
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=remove,tag=check_ready] run scoreboard players remove $number auto_ready 2
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_ready] run function options:add_ready
+execute unless entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_ready] if entity @s[distance=..6] positioned ^ ^ ^0.05 run function options:raycast_ready

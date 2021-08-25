@@ -1,0 +1,13 @@
+execute store result bossbar minecraft:timer value run scoreboard players get $time game_timer
+execute if score $time game_timer matches 297 run function game:battle/reset_arena
+title @a[tag=playing] title [{"text":" ","color":""}]
+title @a[tag=playing] subtitle [{"text":"Hold your vote!","color":"blue"}]
+execute as @a[tag=playing] at @s unless entity @s[nbt={SelectedItemSlot:3}] unless entity @s[nbt={SelectedItemSlot:4}] unless entity @s[nbt={SelectedItemSlot:5}] run title @s actionbar [{"text":"1. ","color":"gold"},{"selector":"@e[tag=v_option_1]","color":"yellow"},{"text":" 2. ","color":"gold"},{"selector":"@e[tag=v_option_2]","color":"yellow"},{"text":" 3. ","color":"gold"},{"selector":"@e[tag=v_option_3]","color":"yellow"}]
+title @a[tag=playing,nbt={SelectedItemSlot:3}] actionbar [{"text":"1. ","color":"gold","underlined":false},{"selector":"@e[tag=v_option_1]","color":"blue","underlined":true},{"text":" 2. ","color":"gold","underlined":false},{"selector":"@e[tag=v_option_2]","color":"yellow"},{"text":" 3. ","color":"gold"},{"selector":"@e[tag=v_option_3]","color":"yellow"}]
+title @a[tag=playing,nbt={SelectedItemSlot:4}] actionbar [{"text":"1. ","color":"gold","underlined":false},{"selector":"@e[tag=v_option_1]","color":"yellow","underlined":false},{"text":" 2. ","color":"gold","underlined":false},{"selector":"@e[tag=v_option_2]","color":"blue","underlined":true},{"text":" 3. ","color":"gold","underlined":false},{"selector":"@e[tag=v_option_3]","color":"yellow"}]
+title @a[tag=playing,nbt={SelectedItemSlot:5}] actionbar [{"text":"1. ","color":"gold","underlined":false},{"selector":"@e[tag=v_option_1]","color":"yellow","underlined":false},{"text":" 2. ","color":"gold","underlined":false},{"selector":"@e[tag=v_option_2]","color":"yellow"},{"text":" 3. ","color":"gold"},{"selector":"@e[tag=v_option_3]","color":"blue","underlined":true}]
+execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:3b,tag:{Voting:1}}]}] run function game:battle/replace_vote_pieces
+execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:4b,tag:{Voting:2}}]}] run function game:battle/replace_vote_pieces
+execute as @a[tag=playing] at @s unless entity @s[nbt={Inventory:[{Slot:5b,tag:{Voting:3}}]}] run function game:battle/replace_vote_pieces
+execute if score $time game_timer matches 0 run function game:battle/calculate_winning_theme
+execute if score $time game_timer matches 1.. if score $game state matches 1 run schedule function game:battle/voting_period 1t

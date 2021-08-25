@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:name_tag"},"title":{"text":"Exclusive Prefix","color":"dark_green","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Complete all advancements within this row to unlock.","color":"green","bold":false}},"parent":"custom/visit_secret","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

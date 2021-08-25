@@ -1,0 +1,2 @@
+execute as @a[tag=!playing,gamemode=adventure] at @s unless entity @s[nbt={Inventory:[{Slot:4b,id:"minecraft:knowledge_book",tag:{book_type:2}}]}] run function lobby:spectator/get_book
+execute as @a[tag=!playing,gamemode=adventure,scores={rc=1..}] at @s run function lobby:spectator/spectate

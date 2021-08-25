@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:netherite_block"},"title":{"text":"Winner Winner!","color":"dark_gray","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Win ten matches of Build Party.","color":"gray","bold":false}},"parent":"custom/win_five_games","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}
