@@ -9,5 +9,5 @@ execute store result score @s click_0 run clear @s red_stained_glass{echest:1,Hi
 execute if entity @s[scores={click_0=1..}] run function chest_menu:toggle_hat
 execute store result score @s click_0 run clear @s music_disc_pigstep{echest:1,HideFlags:63}
 execute if entity @s[scores={click_0=1..}] run function chest_menu:toggle_music
-execute store result score @s click_0 run clear @s netherite_chestplate{echest:1,HideFlags:63}
-execute if entity @s[scores={click_0=1..}] run function chest_menu:toggle_suit
+execute store result score @s click_0 run clear @s dragon_breath{echest:1,HideFlags:63}
+execute if entity @s[scores={click_0=1..}] run function chest_menu:toggle_sound

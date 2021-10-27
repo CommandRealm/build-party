@@ -28,6 +28,22 @@ team modify srbld prefix {"text":"{Sr. Builder} ","color":"dark_blue"}
 team modify srprg prefix {"text":"{Sr. Programmer} ","color":"dark_red"}
 team modify lead prefix [{"text":"{","color":"dark_purple","bold":true},{"text":"Project Lead","bold":false},{"text":"} ","bold":true}]
 
+team add manager
+team add art
+team add srart
+team modify manager color yellow
+team modify art color yellow
+team modify srart color yellow
+
+team modify art prefix {"text":"{Artist} ","color":"green"}
+team modify srart prefix {"text":"{Senior Artist} ","color":"dark_green"}
+team modify manager prefix {"text":"{Manager} ","color":"yellow"}
+
+team add cr
+team modify cr color yellow
+team modify cr prefix [{"text":"{","color":"white","bold":true},{"text":"C","color":"aqua","bold":true},{"text":"R","color":"dark_aqua","bold":true},{"text":"} ","color":"white","bold":true}]
+
+
 team add detective
 team modify detective color yellow
 team modify detective prefix [{"text":"{","color":"dark_blue","bold":true},{"text":"Museum Detective","bold":false,"color":"blue"},{"text":"} ","bold":true,"color":"dark_blue"}]
@@ -59,7 +75,7 @@ team modify guessed color gold
 team modify building color yellow
 team modify building prefix [{"text":"(","color":"blue","bold":true},{"text":"✮","bold":false},{"text":") ","bold":true}]
 team modify guessing prefix [{"text":"[","color":"yellow","bold":true},{"text":"-","bold":false},{"text":"] ","bold":true}]
-team modify guessed prefix [{"text":"{","color":"gold","bold":true},{"text":"✔","bo	ld":false},{"text":"} ","bold":true}]
+team modify guessed prefix [{"text":"{","color":"gold","bold":true},{"text":"✔","bold":false},{"text":"} ","bold":true}]
 scoreboard objectives add book_delay dummy
 scoreboard objectives add timer dummy
 scoreboard objectives add set_timer dummy
@@ -70,6 +86,7 @@ scoreboard objectives add switch_mode trigger
 scoreboard objectives add guess_view dummy
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
+gamerule maxEntityCramming 100
 team modify guessing collisionRule never
 team modify guessing seeFriendlyInvisibles true
 scoreboard objectives add game_timer dummy
@@ -107,6 +124,20 @@ team modify throneroom prefix [{"text":"(","color":"dark_purple","bold":true},{"
 team add fungi
 team modify fungi color yellow
 team modify fungi prefix [{"text":"(","color":"dark_red","bold":true},{"text":"F","color":"red","bold":false},{"text":"u","color":"white","bold":false},{"text":"n","color":"red","bold":false},{"text":" G","color":"white","bold":false},{"text":"u","color":"red","bold":false},{"text":"y","color":"white","bold":false},{"text":" F","color":"red","bold":false},{"text":"u","color":"white","bold":false},{"text":"n","color":"red","bold":false},{"text":"g","color":"white","bold":false},{"text":"i","color":"red","bold":false},{"text":") ","color":"dark_red","bold":true}]
+
+team add wizardry
+team modify wizardry color yellow
+team modify wizardry prefix [{"text":"(","color":"dark_gray","bold":true},{"text":"Warren's","bold":false,"color":"#92763b"},{"text":" Wizardry","color":"#5c3114","bold":false},{"text":") ","color":"dark_gray","bold":true}]
+
+team add mechanics
+team modify mechanics color yellow
+team modify mechanics prefix [{"text":"(","color":"gray","bold":true},{"text":"Ha","color":"white","bold":false},{"text":"z","color":"#76a391","bold":false},{"text":"ardous","color":"white","bold":false},{"text":" Mechanics","color":"#9b6e5e","bold":false},{"text":") ","color":"gray","bold":true}]
+
+team add ruins
+team modify ruins color yellow
+team modify ruins prefix [{"text":"(","color":"yellow","bold":true},{"text":"Ralph's ","color":"gold","bold":false},{"text":"Ruins","color":"gray","bold":false},{"text":") ","color":"yellow","bold":true}]
+
+
 scoreboard objectives add fly minecraft.custom:minecraft.aviate_one_cm
 scoreboard objectives add drop_book minecraft.dropped:minecraft.writable_book
 scoreboard objectives add o_book trigger
@@ -140,7 +171,7 @@ gamerule doTileDrops false
 team add collision
 team join collision @e[type=slime]
 team modify collision collisionRule never
-gamerule fireDamage false   
+gamerule fireDamage false
 scoreboard objectives add options_tp dummy
 kill @e[tag=lobby_options_tp]
 summon area_effect_cloud -7 68.5 11 {Tags:["lobby_options_tp"],Duration:1000000}
@@ -152,11 +183,12 @@ summon area_effect_cloud 0 6 0 {Tags:["spin"],Duration:1000000}
 kill @e[tag=lobby_nameplate]
 summon area_effect_cloud 7 69.5 11 {Duration:1000000,CustomNameVisible:1b,CustomName:'{"text":"Options Room","color":"#ffc868","underlined":true}',Tags:["lobby_nameplate"]}
 summon area_effect_cloud -7 69.5 11 {Duration:1000000,CustomNameVisible:1b,CustomName:'{"text":"Options Room","color":"#ffc868","underlined":true}',Tags:["lobby_nameplate"]}
-summon area_effect_cloud 0 67.5 13 {Duration:1000000,CustomNameVisible:1b,CustomName:'[{"text":"Menu","underlined":true,"color":"blue"}]',Tags:["lobby_nameplate"]}
+summon area_effect_cloud 2 67.5 13 {Duration:1000000,CustomNameVisible:1b,CustomName:'[{"text":"Menu","underlined":true,"color":"blue"}]',Tags:["lobby_nameplate"]}
+summon area_effect_cloud -2 67.5 13 {Duration:1000000,CustomNameVisible:1b,CustomName:'[{"text":"Menu","underlined":true,"color":"blue"}]',Tags:["lobby_nameplate"]}
 scoreboard objectives add team_swap dummy
 scoreboard players add $time team_swap 0
-scoreboard objectives add auto_ready dummy
-scoreboard players add $number auto_ready 0
+scoreboard objectives add limited_guesses dummy
+scoreboard players add $number limited_guesses 0
 scoreboard players set $minute number 1200
 scoreboard objectives add team dummy
 team add blue
@@ -236,3 +268,14 @@ team modify no_guess displayName {"text":"No Guess","color":"red"}
 team modify building displayName {"text":"Building","color":"blue"}
 team modify spectator displayName {"text":"Spectator","color":"white"}
 gamerule reducedDebugInfo true
+
+scoreboard objectives add pregame dummy
+
+summon minecraft:area_effect_cloud 0 70 13 {Age: -2147483648, Duration: -1, WaitTime: -2147483648, Tags: ["start_button_text","lobby_nameplate"],CustomName:'[{"text":"- ","color":"gray"},{"text":"✦ ","color":"gold"},{"text":"Start","color":"yellow","bold":true},{"text":" ✦ ","color":"gold"},{"text":" -","color":"gray"}]',CustomNameVisible:1b}
+
+scoreboard objectives add game dummy
+scoreboard objectives add drop_ready_book minecraft.dropped:knowledge_book
+
+scoreboard objectives add guess_sounds dummy
+
+scoreboard objectives add prefix dummy

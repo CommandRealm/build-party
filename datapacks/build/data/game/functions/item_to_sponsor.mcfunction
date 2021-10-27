@@ -19,3 +19,7 @@ execute if entity @a[tag=show_build,tag=playing,scores={sponsor=3}] at @s run tp
 execute if entity @a[tag=show_build,tag=playing,scores={sponsor=4}] at @s run tp @s ~8000 ~ ~
 execute if entity @a[tag=show_build,tag=playing,scores={sponsor=8}] at @s run tp @s ~16000 ~ ~
 execute if entity @a[tag=show_build,tag=playing,scores={sponsor=6}] at @s run tp @s ~17000 ~ ~
+
+execute if entity @a[tag=show_build,tag=playing,scores={sponsor=9}] at @s run tp @s ~12000 ~ ~
+execute if entity @a[tag=show_build,tag=playing,scores={sponsor=10}] at @s run tp @s ~13000 ~ ~
+execute if entity @a[tag=show_build,tag=playing,scores={sponsor=11}] at @s run tp @s ~14000 ~ ~

@@ -18,7 +18,7 @@ execute if score $time game_timer matches -6 run title @a[tag=playing] title [{"
 execute if score $time game_timer matches -7 run title @a[tag=playing] title [{"text":"The winner is","color":"blue"},{"text":".."}]
 execute if score $time game_timer matches -8 run title @a[tag=playing] title [{"text":"The winner is","color":"blue"},{"text":"."}]
 execute if score $time game_timer matches -9 run title @a[tag=playing] title [{"text":"The winner is","color":"blue"},{"text":":"}]
-execute if score $time game_timer matches -20 run title @a[tag=playing] subtitle {"selector":"@e[tag=theme]","color":"yellow"}
+execute if score $time game_timer matches -20 run title @a[tag=playing] subtitle {"nbt":"Theme","storage":"minecraft:theme","interpret":true,"color":"yellow"}
 execute if score $time game_timer matches -20 as @a[tag=playing] at @s run playsound minecraft:entity.chicken.egg master @s ~ ~ ~ 1 0.8
 execute if score $time game_timer matches -60 run effect give @a[tag=playing] blindness 10 255 true
 execute if score $time game_timer matches -60 run function game:battle/start_building

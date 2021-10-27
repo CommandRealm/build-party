@@ -1,4 +1,4 @@
 scoreboard players set @s hat 5
 tag @s add replace_hat
-replaceitem entity @s armor.head air
+item replace entity @s armor.head with air
 function chest_menu:start_hats

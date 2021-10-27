@@ -1,3 +1,0 @@
-execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=remove,tag=check_g_time] run scoreboard players remove $time set_timer 2400
-execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_g_time] run function options:add_g_time
-execute unless entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_g_time] if entity @s[distance=..6] positioned ^ ^ ^0.05 run function options:raycast_g_time

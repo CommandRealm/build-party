@@ -38,7 +38,7 @@ function credits:hippeh
 function credits:regs
 function credits:j70
 function credits:focii
-execute if score $time startup_timer matches -1 as @a[tag=!playing,scores={ready=0}] at @s if entity @e[tag=show_details,distance=..8] anchored eyes run function lobby:start_raycast
+execute if score $time startup_timer matches -1 as @a at @s if entity @e[tag=show_details,distance=..8] anchored eyes unless score $time startup_timer matches 0.. run function lobby:start_raycast
 execute as @a[tag=!playing,scores={open_e_chest=1..}] at @s run function chest_menu:start
 execute if entity @a[x=0,y=67,z=13,distance=..7,tag=!playing,gamemode=adventure] run function chest_menu:menus
 
@@ -58,3 +58,6 @@ advancement grant @a[x=46,y=66,z=-9,dz=18,dx=6,dy=10] only minecraft:custom/find
 advancement grant @a[x=19,y=63,z=-19,dx=0] only minecraft:custom/visit_secret
 advancement grant @a[advancements={custom/visit_museum=true,custom/use_vending_machine=true,custom/visit_dragon=true,custom/visit_cr_painting=true,custom/visit_bus=true,custom/visit_truck=true,custom/find_cr=true,custom/check_out_socials=true,custom/visit_secret=true,custom/unlock_prefix=false}] only minecraft:custom/unlock_prefix
 execute if entity @a[advancements={completionist/completionist=true},tag=!playing] run function completionist:completionist_helix
+
+##Dropping the ready book
+execute as @a[tag=!playing,gamemode=adventure,scores={drop_ready_book=1..}] at @s run function lobby:drop_ready_book

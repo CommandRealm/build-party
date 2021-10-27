@@ -10,6 +10,6 @@ execute as @a[tag=playing] at @s run playsound minecraft:block.note_block.guitar
 gamemode spectator @a[tag=playing]
 tellraw @a[tag=playing] [{"text":" | ","color":"gold","bold":true},{"text":"The round is over!","color":"yellow","bold":false}]
 title @a[tag=playing] times 5 75 5
-title @a[tag=playing] title {"text":"The theme was: ","color":"gold"}
-title @a subtitle [{"selector":"@e[tag=theme]","color":"yellow"}]
+title @a[x=0,y=66,z=0,distance=500..] title {"text":"The theme was: ","color":"gold"}
+title @a[x=0,y=66,z=0,distance=500..] subtitle [{"nbt":"Theme","storage":"minecraft:theme","interpret":true,"color":"yellow"}]
 bossbar set timer visible false

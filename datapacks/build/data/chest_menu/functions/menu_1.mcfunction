@@ -31,5 +31,14 @@ execute if entity @s[scores={click_0=1..}] run function chest_menu:join_s_7
 execute store result score @s click_0 run clear @s black_terracotta{echest:1,HideFlags:63}
 execute if entity @s[scores={click_0=1..}] run function chest_menu:join_s_8
 
+execute store result score @s click_0 run clear @s warped_planks{echest:1,HideFlags:63}
+execute if entity @s[scores={click_0=1..}] run function chest_menu:join_s_9
+
+execute store result score @s click_0 run clear @s cut_copper{echest:1,HideFlags:63}
+execute if entity @s[scores={click_0=1..}] run function chest_menu:join_s_10
+
+execute store result score @s click_0 run clear @s chiseled_sandstone{echest:1,HideFlags:63}
+execute if entity @s[scores={click_0=1..}] run function chest_menu:join_s_11
+
 execute store result score @s click_0 run clear @s ghast_tear{echest:1,HideFlags:63}
 execute if entity @s[scores={click_0=1..}] run function chest_menu:start_sponsors

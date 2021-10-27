@@ -8,3 +8,7 @@ execute if entity @s[scores={sponsor=2}] run summon area_effect_cloud 13988 65 -
 execute if entity @s[scores={sponsor=3}] run summon area_effect_cloud 7988 65 -12 {Duration:100000,Tags:["sponsor_marker"]}
 execute if entity @s[scores={sponsor=8}] run summon area_effect_cloud 14988 65 -12 {Duration:100000,Tags:["sponsor_marker"]}
 execute if entity @s[scores={sponsor=6}] run summon area_effect_cloud 15988 65 -12 {Duration:100000,Tags:["sponsor_marker"]}
+
+execute if entity @s[scores={sponsor=9}] run summon area_effect_cloud 10988 65 -12 {Duration:100000,Tags:["sponsor_marker"]}
+execute if entity @s[scores={sponsor=10}] run summon area_effect_cloud 11988 65 -12 {Duration:100000,Tags:["sponsor_marker"]}
+execute if entity @s[scores={sponsor=11}] run summon area_effect_cloud 12988 65 -12 {Duration:100000,Tags:["sponsor_marker"]}

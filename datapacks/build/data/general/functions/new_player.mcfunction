@@ -14,7 +14,7 @@ tag @s remove builder
 tag @s remove built
 spawnpoint @s 0 66 0
 scoreboard players add @s sponsor 0
-scoreboard players set @s ready 0
+scoreboard players set @s ready 1
 scoreboard players enable @s o_book
 scoreboard players add @s hat 0
 scoreboard players reset @s intro_walk
@@ -42,3 +42,7 @@ tellraw @s[scores={sponsor=5}] [{"text":"","bold":false},{"text":"▶ ","color":
 tellraw @s[scores={sponsor=6}] [{"text":"","bold":false},{"text":"▶ ","color":"blue","bold":true},{"text":"Your current \"sponsorship\" is with: ","color":"gold"},{"text":"(","color":"green","bold":true},{"text":"Woody's Lumber","color":"#9f5b1f","bold":false},{"text":") ","color":"green","bold":true}]
 tellraw @s[scores={sponsor=7}] [{"text":"","bold":false},{"text":"▶ ","color":"blue","bold":true},{"text":"Your current \"sponsorship\" is with: ","color":"gold"},{"text":"(","color":"yellow","bold":true},{"text":"Beetopia","color":"gold","bold":false},{"text":") ","color":"yellow","bold":true}]
 tellraw @s[scores={sponsor=8}] [{"text":"","bold":false},{"text":"▶ ","color":"blue","bold":true},{"text":"Your current \"sponsorship\" is with: ","color":"gold"},{"text":"(","color":"gold","bold":true},{"text":"Dimension Convention","color":"dark_red","bold":false},{"text":") ","color":"gold","bold":true}]
+
+tellraw @s[scores={sponsor=9}] [{"text":"(","color":"dark_gray","bold":true},{"text":"Warren's","bold":false,"color":"#92763b"},{"text":" Wizardry","color":"#5c3114","bold":false},{"text":") ","color":"dark_gray","bold":true}]
+tellraw @s[scores={sponsor=10}] [{"text":"","bold":false},{"text":"▶ ","color":"blue","bold":true},{"text":"Your current \"sponsorship\" is with: ","color":"gold"},{"text":"(","color":"gray","bold":true},{"text":"Ha","color":"white","bold":false},{"text":"z","color":"#76a391","bold":false},{"text":"ardous","color":"white","bold":false},{"text":" Mechanics","color":"#9b6e5e","bold":false},{"text":") ","color":"gray","bold":true}]
+tellraw @s[scores={sponsor=11}] [{"text":"","bold":false},{"text":"▶ ","color":"blue","bold":true},{"text":"Your current \"sponsorship\" is with: ","color":"gold"},{"text":"(","color":"yellow","bold":true},{"text":"Ralph's ","color":"gold","bold":false},{"text":"Ruins","color":"gray","bold":false},{"text":") ","color":"yellow","bold":true}]

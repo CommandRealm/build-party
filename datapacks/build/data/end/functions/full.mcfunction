@@ -16,10 +16,13 @@ scoreboard players add @a[tag=unlock_s_5] check_sponsors 1
 scoreboard players add @a[tag=unlock_s_6] check_sponsors 1
 scoreboard players add @a[tag=unlock_s_7] check_sponsors 1
 scoreboard players add @a[tag=unlock_s_8] check_sponsors 1
+scoreboard players add @a[tag=unlock_s_9] check_sponsors 1
+scoreboard players add @a[tag=unlock_s_10] check_sponsors 1
+scoreboard players add @a[tag=unlock_s_11] check_sponsors 1
 advancement grant @a[scores={check_sponsors=3..}] only minecraft:custom/three_s_offers
 advancement grant @a[scores={check_sponsors=5..}] only minecraft:custom/five_s_offers
-advancement grant @a[scores={check_sponsors=9..}] only minecraft:custom/all_s_offers
+advancement grant @a[scores={check_sponsors=12..}] only minecraft:custom/all_s_offers
 
-advancement grant @a[advancements={custom/visit_sponsor=true,custom/three_s_offers=true,custom/five_s_offers=true,custom/all_s_offers=true}] only minecraft:custom/unlock_suit
+advancement grant @a[advancements={custom/visit_sponsor=true,custom/three_s_offers=true,custom/five_s_offers=true,custom/all_s_offers=true}] only minecraft:custom/unlock_sound
 
 advancement grant @a[advancements={custom/play_game=true,custom/win_guess=true,custom/win_versus=true,custom/win_teams=true,custom/win_five_games=true,custom/win_ten_games=true}] only minecraft:custom/unlock_hat

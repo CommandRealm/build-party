@@ -11,7 +11,7 @@ execute if score $number team matches 1 run schedule function game:clone_build_t
 execute if score $number team matches 2.. run function game:battle/teams/set_rating_marker
 schedule function game:battle/clone_build_under_lobby 2t
 execute if score $number team matches 1 run title @a[tag=playing] title [{"selector":"@a[tag=show_build]","color":"yellow","bold":false},{"text":"'s"}]
-title @a[tag=playing] subtitle [{"selector":"@e[tag=theme,limit=1]","color":"yellow","bold":true}]
+title @a[tag=playing] subtitle [{"nbt":"Theme","storage":"minecraft:theme","interpret":true,"color":"yellow"}]
 scoreboard players set $time game_timer 400
 bossbar remove timer
 bossbar add timer {"text":"Rating time remaining","color":"blue","underlined":true}

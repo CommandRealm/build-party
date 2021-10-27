@@ -96,7 +96,8 @@ clear @s brown_shulker_box
 clear @s green_shulker_box
 clear @s red_shulker_box
 clear @s black_shulker_box
-replaceitem entity @s[nbt={Inventory:[{Slot:102b,id:"minecraft:elytra"}]}] armor.chest air
+clear @s respawn_anchor
+item replace entity @s[nbt={Inventory: [{Slot: 102b, id: "minecraft:elytra"}]}] armor.chest with air
 playsound minecraft:block.note_block.didgeridoo master @s ~ ~ ~ 1 0
 tellraw @s [{"text":"!INVALD ITEM!","color":"dark_red"},{"text":" You cannot use this item here.","color":"red"}]
 scoreboard players reset @s fly

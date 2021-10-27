@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:netherite_chestplate"},"title":{"text":"Exclusive Suit","color":"dark_gray","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Complete all advancements within this row to unlock.","color":"gray","bold":false}},"parent":"custom/all_s_offers","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

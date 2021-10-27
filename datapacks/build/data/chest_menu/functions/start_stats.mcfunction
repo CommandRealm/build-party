@@ -7,7 +7,7 @@ loot replace entity @s enderchest.12 loot minecraft:stats_guessing
 loot replace entity @s enderchest.14 loot minecraft:stats_guessed
 loot replace entity @s enderchest.15 loot minecraft:stats_p_given
 loot replace entity @s enderchest.16 loot minecraft:stats_p_taken
-replaceitem entity @s enderchest.18 barrier{HideFlags:63,echest:1,display:{Name:'{"text":"Back","italic":false,"color":"red"}'}} 
+item replace entity @s enderchest.18 with barrier{HideFlags: 63, echest: 1, display: {Name: '{"text":"Back","italic":false,"color":"red"}'}} 
 
 
 playsound minecraft:ui.button.click master @s[scores={click_0=1..}] ~ ~ ~ 1000000 1

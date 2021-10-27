@@ -22,3 +22,12 @@ tag @a[tag=playing] remove reset_movement
 tag @a[tag=playing] remove replace_hat
 scoreboard players add @a[tag=playing] stats_played 1
 advancement grant @a[tag=playing] only minecraft:custom/play_game
+
+advancement revoke @a only game:inventory_changed
+
+
+
+setblock 0 69 12 air
+
+
+data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 0b

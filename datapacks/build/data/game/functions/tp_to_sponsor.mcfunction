@@ -7,3 +7,8 @@ execute if entity @s[scores={sponsor=3}] run tp @s 8000 67 0
 execute if entity @s[scores={sponsor=4}] run tp @s 7000 67 0
 execute if entity @s[scores={sponsor=8}] run tp @s 15000 67 0
 execute if entity @s[scores={sponsor=6}] run tp @s 16000 67 0
+
+
+tp @s[scores={sponsor=9}] 11000 67 0
+tp @s[scores={sponsor=10}] 12000 67 0
+tp @s[scores={sponsor=11}] 13000 67 0

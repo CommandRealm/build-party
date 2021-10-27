@@ -1,3 +1,0 @@
-execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=remove,tag=check_team] run scoreboard players remove $number team 2
-execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_team] run function options:add_team
-execute unless entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_team] if entity @s[distance=..6] positioned ^ ^ ^0.05 run function options:raycast_team
