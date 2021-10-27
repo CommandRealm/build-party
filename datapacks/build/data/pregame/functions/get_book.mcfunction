@@ -1,0 +1,4 @@
+clear @s knowledge_book
+kill @e[type=item,nbt={Item:{id:"minecraft:knowledge_book"}}]
+item replace entity @s[scores={ready=0}] hotbar.4 with knowledge_book{no_echest:1,Recipes:[{id:"minecraft:book"}],display:{Name:'[{"text":"Click ","color":"yellow","italic":false},{"text":"to play!","color":"gold"}]',Lore:['[{"text":"Drop to reset your lobby position.","color":"gray","italic":false}]']}}
+item replace entity @s[scores={ready=1}] hotbar.4 with knowledge_book{HideFlags:63,no_echest:1,Enchantments:[{id:"minecraft:aqua_affinity",lvl:1}],Recipes:[{id:"minecraft:book"}],display:{Name:'[{"text":"Click ","color":"gray","italic":false},{"text":"to spectate.","color":"white"}]',Lore:['[{"text":"Drop to reset your lobby position.","color":"gray","italic":false}]']}}
