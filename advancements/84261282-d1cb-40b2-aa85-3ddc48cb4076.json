@@ -1,69 +1,75 @@
 {
-  "minecraft:custom/visit_museum": {
+  "minecraft:custom/root": {
     "criteria": {
-      "impossible": "2021-08-11 15:56:00 -0700"
+      "tick": "2023-03-15 23:51:54 -0700"
     },
     "done": true
   },
-  "minecraft:custom/play_game": {
+  "minecraft:custom/visit_museum": {
     "criteria": {
-      "impossible": "2021-08-11 15:44:57 -0700"
+      "impossible": "2023-03-15 23:55:28 -0700"
+    },
+    "done": true
+  },
+  "minecraft:custom/visit_cr_painting": {
+    "criteria": {
+      "impossible": "2023-03-16 00:09:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:custom/visit_dragon": {
+    "criteria": {
+      "impossible": "2023-03-16 00:11:28 -0700"
+    },
+    "done": true
+  },
+  "minecraft:custom/visit_truck": {
+    "criteria": {
+      "impossible": "2023-03-16 00:12:50 -0700"
     },
     "done": true
   },
   "minecraft:custom/find_cr": {
     "criteria": {
-      "impossible": "2021-08-17 14:02:24 -0700"
+      "impossible": "2023-03-16 00:33:36 -0700"
     },
     "done": true
   },
-  "minecraft:custom/five_s_offers": {
+  "minecraft:custom/play_game": {
     "criteria": {
-      "impossible": "2021-08-11 15:45:33 -0700"
-    },
-    "done": true
-  },
-  "minecraft:custom/three_s_offers": {
-    "criteria": {
-      "impossible": "2021-08-11 15:45:33 -0700"
-    },
-    "done": true
-  },
-  "minecraft:custom/go_swimming": {
-    "criteria": {
-      "impossible": "2021-10-18 21:13:37 -0700"
-    },
-    "done": true
-  },
-  "minecraft:custom/root": {
-    "criteria": {
-      "tick": "2021-08-11 15:41:49 -0700"
-    },
-    "done": true
-  },
-  "minecraft:custom/check_out_socials": {
-    "criteria": {
-      "impossible": "2021-10-18 21:14:23 -0700"
-    },
-    "done": true
-  },
-  "game:inventory_changed": {
-    "criteria": {
-      "requirement": "2021-10-18 21:13:39 -0700"
+      "impossible": "2023-03-16 01:19:52 -0700"
     },
     "done": true
   },
   "minecraft:custom/visit_sponsor": {
     "criteria": {
-      "impossible": "2021-08-11 15:44:57 -0700"
+      "impossible": "2023-03-16 01:19:52 -0700"
     },
     "done": true
   },
-  "minecraft:custom/light_tnt": {
+  "minecraft:custom/sign_book": {
     "criteria": {
-      "impossible": "2021-10-18 21:14:38 -0700"
+      "impossible": "2023-03-16 01:19:56 -0700"
     },
     "done": true
   },
-  "DataVersion": 2730
+  "minecraft:custom/three_s_offers": {
+    "criteria": {
+      "impossible": "2023-06-14 13:20:57 -0700"
+    },
+    "done": true
+  },
+  "minecraft:custom/win_guess": {
+    "criteria": {
+      "impossible": "2023-06-14 13:20:57 -0700"
+    },
+    "done": true
+  },
+  "game:inventory_changed": {
+    "criteria": {
+      "requirement": "2023-06-14 13:27:26 -0700"
+    },
+    "done": true
+  },
+  "DataVersion": 3465
 }

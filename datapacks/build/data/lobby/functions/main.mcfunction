@@ -9,8 +9,7 @@ execute as @e[tag=model,type=armor_stand] at @s run tp @s ~ ~ ~ ~5 ~
 effect give @a[gamemode=adventure] weakness 2 255 true
 
 execute as @e[tag=spin,type=area_effect_cloud] at @s run tp @s ~ ~ ~ ~15 ~
-execute at @e[tag=lobby_options_tp,type=area_effect_cloud] run particle portal ~ 67.75 ~ 0.05 1 0.05 0.25 5
-particle portal 7 67.75 11 0.05 1 0.05 0.25 5
+execute at @e[tag=lobby_options_tp,type=area_effect_cloud] run particle wax_on ~ 67.75 ~ 0.05 1 0.05 0.25 3
 execute as @e[tag=spin] at @s positioned as @e[tag=lobby_options_tp,x=7,y=68,z=11,distance=..3] run particle firework ^ ^ ^0.5 0 0 0 0 1
 execute as @e[tag=spin] at @s positioned as @e[tag=lobby_options_tp,x=-7,y=68,z=11,distance=..3] run particle firework ^ ^ ^-0.5 0 0 0 0 1
 execute as @e[tag=lobby_options_tp,scores={options_tp=0}] at @s at @s[y=67.0,distance=..1] run scoreboard players set @s options_tp 1
@@ -61,3 +60,27 @@ execute if entity @a[advancements={completionist/completionist=true},tag=!playin
 
 ##Dropping the ready book
 execute as @a[tag=!playing,gamemode=adventure,scores={drop_ready_book=1..}] at @s run function lobby:drop_ready_book
+
+
+# called to teleport people who go down the tunnels
+execute as @a[x=81,y=66,z=-12,dx=10,dy=10,dz=24,gamemode=adventure] at @s run function lobby:tunnel/side_1
+
+execute as @a[x=-91,y=66,z=-12,dx=10,dy=10,dz=24,gamemode=adventure] at @s run function lobby:tunnel/side_2
+
+
+# if we're too high in the lobby building area
+execute as @a[x=-13,y=80,z=14,dx=26,dy=15,dz=26,gamemode=adventure] at @s run function lobby:too_high
+
+# traffic timers
+scoreboard players add $traffic lobby 1
+
+#
+execute if score $traffic lobby matches 1 run function lobby:signals/crosswalk_gray
+execute if score $traffic lobby matches 40 run function lobby:signals/green
+execute if score $traffic lobby matches 160 run function lobby:signals/yellow
+execute if score $traffic lobby matches 200 run function lobby:signals/red
+execute if score $traffic lobby matches 260 run function lobby:signals/crosswalk_green
+
+
+scoreboard players add $time credits 1
+execute if score $time credits matches 140.. run function credits:cycle_armor_stand

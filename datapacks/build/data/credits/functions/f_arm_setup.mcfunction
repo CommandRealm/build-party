@@ -1,5 +1,5 @@
 kill @e[tag=pl]
-summon minecraft:armor_stand 0 75 69 {Tags:["credits","pl","show_details"],NoBasePlate:1,ShowArms:1,Rotation:[180.0f,0.0f],NoGravity:1,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"FalconReign"}}],Pose:{RightArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f],Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f]},Marker:1}
+summon minecraft:armor_stand 0 75 69.2 {Tags:["credits","pl","show_details"],NoBasePlate:1,ShowArms:1,Rotation:[180.0f,0.0f],NoGravity:1,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"FalconReign"}}],Pose:{RightArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f],Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f]},Marker:1}
 scoreboard objectives add pl dummy
 scoreboard objectives add pl2 dummy
 scoreboard objectives add pld dummy

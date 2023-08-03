@@ -5,7 +5,7 @@ execute as @a[tag=correct_guess] at @s run function game:guess/correct_guess
 execute as @a[team=guessing,scores={book_delay=1}] at @s run function game:guess/replace_book
 execute as @a[team=guessing,scores={book_delay=0}] at @s unless data entity @s {SelectedItemSlot:8} unless entity @s[nbt={SelectedItem:{tag:{pages:['                                                     Type in your guess! Make sure not to use any capitals in it. When you are happy with your answer, click "Done." Good luck!']}}}] run scoreboard players set @s book_delay 1
 execute if score $time cooldown matches 0 unless entity @a[team=guessing] unless entity @a[tag=admin] run function game:guess/start_cooldown
-##execute as @a[scores={switch_mode=1..}] at @s run function game:guess/click_switch_mode
+
 function game:guess/restrict_edges
 execute as @a[team=building] at @s at @s[y=160,distance=..60] run function game:return_to_plot
 execute as @a[team=building] at @s at @s[y=4,distance=..60] run function game:return_to_plot

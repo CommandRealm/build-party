@@ -1,0 +1,1 @@
+tellraw @a [{"selector":"@s"},{"text":" guessed","color":"gold"},{"text":": ","color":"gray"},{"nbt":"announce_guess","storage":"minecraft:guess","color":"white"}]

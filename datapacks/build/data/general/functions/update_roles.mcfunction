@@ -54,7 +54,7 @@ tag TheRegularMex add has_test
 tag TheTypicalMex add has_test
 tag Calverin add has_test
 tag tinaaaa420 add has_test
-tag II_Owen_II add has_test
+tag OwenEquinox add has_test
 tag OPWolf2323 add has_test
 tag matthoff8 add has_test
 tag EpicStar123 add has_test
@@ -91,6 +91,15 @@ tag GoldenFreddy_19 add has_test
 tag BoomPax add has_test
 tag _doucat_ add has_test
 tag Wriot_gaming add has_test
+
+tag Urgle add has_test
+tag joelzoboyo add has_test
+tag Quackleb add has_test
+tag 3letters_ add has_test
+tag Roleinet add has_test
+tag Kotyaken add has_test
+tag 4953makcim add has_test
+
 ##Those who have helper.
 tag FalconReign add has_help
 tag J70 add has_help
@@ -105,7 +114,7 @@ tag TheRegularMex add has_help
 tag TheTypicalMex add has_help
 tag Calverin add has_help
 tag tinaaaa420 add has_help
-tag II_Owen_II add has_help
+tag OwenEquinox add has_help
 tag TheRangerMark add has_help
 tag Urgle add has_help
 

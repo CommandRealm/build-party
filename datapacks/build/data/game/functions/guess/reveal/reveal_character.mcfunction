@@ -52,4 +52,4 @@ execute if score $rand random matches 39 run data modify storage minecraft:under
 scoreboard players operation $time_till_letter game = $time_between_letters game
 
 ##Sound
-execute as @a[x=0,y=66,z=0,distance=100..] at @s run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 1 0
+execute as @a[x=0,y=66,z=0,distance=100..] at @s run playsound minecraft:block.note_block.hat master @a[tag=!no_letters] ~ ~ ~ 1 0

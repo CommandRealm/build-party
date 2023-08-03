@@ -7,7 +7,7 @@ execute as @a[tag=playing] at @s run scoreboard players operation @s fake_points
 execute as @a[tag=playing] at @s run scoreboard players operation $check_place fake_points > @s points
 execute as @a[tag=playing] at @s run scoreboard players operation @s fake_points -= $check_place fake_points
 tellraw @a[tag=playing] {"text":"\n\n"}
-tellraw @a [{"text":"======================Build ","color":"yellow"},{"text":"Party======================","color":"gold"}]
+tellraw @a [{"text":"===================Build ","color":"yellow"},{"text":"Party===================","color":"gold"}]
 execute as @a[scores={fake_points=0},tag=playing,tag=!got_placement,limit=1,team=blue] run tellraw @a [{"text":"\nVictor: ","color":"yellow"},{"text":"Blue team","color":"aqua"},{"text":" score: ","color":"yellow"},{"score":{"objective":"points","name":"@s"},"color":"yellow"}]
 execute as @a[scores={fake_points=0},tag=playing,tag=!got_placement,limit=1,team=orange] run tellraw @a [{"text":"\nVictor: ","color":"yellow"},{"text":"Orange team","color":"#ff4e00"},{"text":" score: ","color":"yellow"},{"score":{"objective":"points","name":"@s"},"color":"yellow"}]
 execute as @a[scores={fake_points=0},tag=playing,tag=!got_placement,limit=1,team=green] run tellraw @a [{"text":"\nVictor: ","color":"yellow"},{"text":"Green team","color":"green"},{"text":" score: ","color":"yellow"},{"score":{"objective":"points","name":"@s"},"color":"yellow"}]

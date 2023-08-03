@@ -19,7 +19,7 @@ execute store result bossbar minecraft:timer max run scoreboard players get $tim
 execute store result bossbar minecraft:timer value run scoreboard players get $time set_battle_timer
 scoreboard players operation $time game_timer = $time set_battle_timer
 function game:update_bossbar
-loot replace entity @a[tag=builder] hotbar.8 loot minecraft:options_book
+execute if score $number nine_block matches 0 run loot replace entity @a[tag=builder] hotbar.8 loot minecraft:options_book
 execute as @a[tag=playing,tag=builder,scores={music=1},tag=!no_music] at @s run playsound minecraft:music_disc.blocks record @s ~ ~ ~ 100000 1
 execute as @a[tag=playing,tag=builder,scores={music=2},tag=!no_music] at @s run playsound minecraft:music_disc.stal record @s ~ ~ ~ 100000 1
 execute as @a[tag=playing,tag=builder,scores={music=3},tag=!no_music] at @s run playsound minecraft:music_disc.strad record @s ~ ~ ~ 100000 1
@@ -29,3 +29,6 @@ execute as @a[tag=playing,tag=builder,scores={music=6},tag=!no_music] at @s run 
 execute as @a[tag=playing,tag=builder,scores={music=7},tag=!no_music] at @s run playsound minecraft:music_disc.mellohi record @s ~ ~ ~ 100000 0
 execute as @a[tag=playing,tag=builder,scores={music=8},tag=!no_music] at @s run playsound minecraft:music_disc.pigstep record @s ~ ~ ~ 100000 1
 execute as @a[tag=playing,tag=builder,scores={music=9},tag=!no_music] at @s run playsound minecraft:music_disc.pigstep record @s ~ ~ ~ 100000 1.15
+
+
+execute if score $number nine_block matches 1 run function game:random_blocks/fix_inventory

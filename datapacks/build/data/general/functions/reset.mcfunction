@@ -1,7 +1,7 @@
 advancement revoke @s everything
 tag @s remove admin
 recipe take @s *
-scoreboard players set @s hat 0
+scoreboard players set @s sel_hat 0
 scoreboard players set @s sponsor 0
 scoreboard players set @s music 0
 scoreboard players set @s guess_sounds 0

@@ -6,7 +6,7 @@ execute as @a[tag=playing] at @s run scoreboard players operation @s fake_points
 execute as @a[tag=playing] at @s run scoreboard players operation $check_place fake_points > @s points
 execute as @a[tag=playing] at @s run scoreboard players operation @s fake_points -= $check_place fake_points
 tellraw @a[tag=playing] {"text":"\n\n"}
-tellraw @a [{"text":"======================Build ","color":"yellow"},{"text":"Party======================","color":"gold"}]
+tellraw @a [{"text":"===================Build ","color":"yellow"},{"text":"Party===================","color":"gold"}]
 execute as @a[scores={fake_points=0},tag=playing] run tellraw @a [{"text":"\nVictor: ","color":"yellow"},{"selector":"@s","color":"orange"},{"text":" score: "},{"score":{"objective":"points","name":"@s"}}]
 execute as @r[scores={fake_points=0},tag=playing,tag=!got_placement] at @s run function game:clone_build_to_lobby
 advancement grant @a[scores={fake_points=0},tag=playing,tag=!got_placement] only minecraft:custom/win_versus

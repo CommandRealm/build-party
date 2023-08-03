@@ -9,6 +9,8 @@ tag @a[tag=has_srbld] add staff
 tag @a[tag=has_prg] add staff
 tag @a[tag=has_srprg] add staff
 tag @a[tag=has_lead] add staff
+tag @a[tag=has_lead] add staff
+tag @a[advancements={minecraft:custom/unlock_prefix=true}] add staff
 team join lobby @s
 team join fa @s[gamemode=!spectator,scores={sponsor=0}]
 team join redstone_inc @s[gamemode=!spectator,scores={sponsor=1}]

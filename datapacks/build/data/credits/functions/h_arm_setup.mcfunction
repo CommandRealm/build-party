@@ -1,5 +1,5 @@
 kill @e[tag=hippeh]
-summon minecraft:armor_stand 1.75 74.5 69 {Tags:["credits","hippeh","show_details"],NoBasePlate:1,ShowArms:1,Rotation:[225.0f,0.0f],NoGravity:1,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"Connop"}}],Pose:{RightArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f],Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f]},Marker:1}
+summon minecraft:armor_stand 1.5 74.5 69.5 {Tags:["credits","hippeh","show_details"],NoBasePlate:1,ShowArms:1,Rotation:[225.0f,0.0f],NoGravity:1,ArmorItems:[{},{},{},{id:"minecraft:player_head",Count:1b,tag:{SkullOwner:"Connop"}}],Pose:{RightArm:[0.0f,0.0f,0.0f],RightLeg:[0.0f,0.0f,0.0f],LeftArm:[0.0f,0.0f,0.0f],LeftLeg:[0.0f,0.0f,0.0f],Head:[0.0f,0.0f,0.0f],Body:[0.0f,0.0f,0.0f]},Marker:1}
 scoreboard objectives add HArm1 dummy
 scoreboard objectives add HArm2 dummy
 scoreboard objectives add HArmD dummy

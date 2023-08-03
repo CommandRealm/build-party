@@ -82,7 +82,6 @@ scoreboard objectives add set_timer dummy
 scoreboard objectives add cooldown dummy
 scoreboard players set $time startup_timer -1
 scoreboard objectives add check_tie dummy
-scoreboard objectives add switch_mode trigger
 scoreboard objectives add guess_view dummy
 gamerule sendCommandFeedback false
 gamerule commandBlockOutput false
@@ -145,7 +144,7 @@ scoreboard objectives add v_theme_1 dummy
 scoreboard objectives add v_theme_2 dummy
 scoreboard objectives add v_theme_3 dummy
 scoreboard objectives add theme_results dummy
-scoreboard objectives add hat dummy
+scoreboard objectives add sel_hat dummy
 scoreboard objectives add player_hat_a dummy
 scoreboard objectives add adv_jukebox minecraft.used:minecraft.jukebox
 scoreboard objectives add adv_wolf minecraft.used:minecraft.wolf_spawn_egg
@@ -279,3 +278,16 @@ scoreboard objectives add drop_ready_book minecraft.dropped:knowledge_book
 scoreboard objectives add guess_sounds dummy
 
 scoreboard objectives add prefix dummy
+
+scoreboard objectives add lobby dummy
+
+scoreboard objectives add credits dummy
+
+scoreboard objectives add nine_block dummy
+
+scoreboard objectives add hat trigger
+
+scoreboard objectives add allow_entities dummy
+
+scoreboard objectives add calculate dummy
+scoreboard objectives add announce_guesses dummy

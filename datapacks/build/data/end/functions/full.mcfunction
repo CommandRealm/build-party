@@ -26,3 +26,5 @@ advancement grant @a[scores={check_sponsors=12..}] only minecraft:custom/all_s_o
 advancement grant @a[advancements={custom/visit_sponsor=true,custom/three_s_offers=true,custom/five_s_offers=true,custom/all_s_offers=true}] only minecraft:custom/unlock_sound
 
 advancement grant @a[advancements={custom/play_game=true,custom/win_guess=true,custom/win_versus=true,custom/win_teams=true,custom/win_five_games=true,custom/win_ten_games=true}] only minecraft:custom/unlock_hat
+
+tag @a remove builder

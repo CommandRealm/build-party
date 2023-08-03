@@ -58,9 +58,6 @@ execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:zombie_spaw
 execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:zombie_horse_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
 execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:zombified_piglin_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
 execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:zombie_villager_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
-execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:axolotl_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
-execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:goat_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
-execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:glow_squid_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
 execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:bee_nest",tag:{}}]}] at @s run function game:invalid_item
 execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:beehive",tag:{}}]}] at @s run function game:invalid_item
 execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:command_block"}]}] at @s run function game:invalid_item
@@ -98,4 +95,21 @@ execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:red_shulker
 execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:black_shulker_box",tag:{}}]}] at @s run function game:invalid_item
 execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:respawn_anchor"}]}] at @s run function game:invalid_item
 
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:zoglin_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:piglin_brute_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:glow_squid_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:goat_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:axolotl_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:strider_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:allay_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:frog_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:tadpole_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+execute as @a[tag=playing,tag=builder,nbt={Inventory:[{id:"minecraft:warden_spawn_egg",tag:{}}]}] at @s run function game:invalid_item
+
+
+execute if score $number allow_entities matches 0 run function game:check_spawn_eggs
+
 advancement revoke @a only game:inventory_changed
+
+execute if score $number nine_block matches 1 run function game:random_blocks/fix_inventory

@@ -53,6 +53,16 @@ execute if score $rand random matches 39 run data modify storage minecraft:under
 execute if data storage minecraft:underscores {Isolation:[" "]} run function game:guess/reveal/invalid_character
 execute if data storage minecraft:underscores {Isolation:["-"]} run function game:guess/reveal/invalid_character
 execute if data storage minecraft:underscores {Isolation:["."]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["1"]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["2"]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["3"]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["4"]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["5"]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["6"]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["7"]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["8"]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["9"]} run function game:guess/reveal/invalid_character
+execute if data storage minecraft:underscores {Isolation:["0"]} run function game:guess/reveal/invalid_character
 
 ##If we're good so far, check if it's already been used
 execute if score $found_character game matches 0 run function game:guess/reveal/check_if_already_revealed

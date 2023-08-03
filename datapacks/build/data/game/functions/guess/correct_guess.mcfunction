@@ -17,7 +17,7 @@ execute if score $starting_players game matches 4.. if score $correct_guesses ga
 execute if score $starting_players game matches 4.. if score $correct_guesses game matches 2 run tellraw @s [{"text":"+2","color":"gold","bold":true},{"text":" points!","color":"yellow","bold":false}]
 
 
-execute if score $starting_players game matches 4.. if score $correct_guesses game matches 3 if entity @a[team=guessed,tag=playing] run tellraw @s [{"text":"+1","color":"gold","bold":true},{"text":" point!","color":"yellow","bold":false}]
+execute if score $starting_players game matches 4.. if score $correct_guesses game matches 3.. if entity @a[team=guessed,tag=playing] run tellraw @s [{"text":"+1","color":"gold","bold":true},{"text":" point!","color":"yellow","bold":false}]
 
 
 

@@ -1,3 +1,5 @@
+
+execute if score $number nine_block matches 1 as @r[tag=playing] run function game:random_blocks/generate
 effect give @a[tag=playing] blindness 1 255 true
 gamemode adventure @a[tag=playing]
 clear @a[tag=playing]
@@ -53,20 +55,20 @@ kill @e[tag=v_option]
 function game:get_theme
 summon area_effect_cloud 0 5 0 {Tags:["v_option_1","v_option"],Duration:500}
 setblock 0 0 0 air
-setblock 0 0 0 oak_sign{Text1:'[{"nbt":"Theme","storage":"minecraft:theme","interpret":true}]'}
+setblock 0 0 0 oak_sign{front_text:{messages:['[{"nbt":"Theme","storage":"minecraft:theme","interpret":true}]', '{"text":""}', '{"text":""}', '{"text":""}']}}
 execute as @e[tag=v_option_1] at @s run data modify entity @s CustomName set from block 0 0 0 Text1
 scoreboard players operation $theme v_theme_1 = $rand random
 function game:get_theme
 summon area_effect_cloud 0 5 0 {Tags:["v_option_2","v_option"],Duration:500}
 setblock 0 0 0 air
-setblock 0 0 0 oak_sign{Text1:'[{"nbt":"Theme","storage":"minecraft:theme","interpret":true}]'}
+setblock 0 0 0 oak_sign{front_text:{messages:['[{"nbt":"Theme","storage":"minecraft:theme","interpret":true}]', '{"text":""}', '{"text":""}', '{"text":""}']}}
 execute as @e[tag=v_option_2] at @s run data modify entity @s CustomName set from block 0 0 0 Text1
 scoreboard players operation $theme v_theme_2 = $rand random
 function game:get_theme
 summon area_effect_cloud 0 5 0 {Tags:["v_option_3","v_option"],Duration:500}
 execute as @e[tag=v_option_3] at @s run data modify entity @s CustomName set from entity @e[tag=theme,limit=1,sort=random] CustomName
 setblock 0 0 0 air
-setblock 0 0 0 oak_sign{Text1:'[{"nbt":"Theme","storage":"minecraft:theme","interpret":true}]'}
+setblock 0 0 0 oak_sign{front_text:{messages:['[{"nbt":"Theme","storage":"minecraft:theme","interpret":true}]', '{"text":""}', '{"text":""}', '{"text":""}']}}
 execute as @e[tag=v_option_3] at @s run data modify entity @s CustomName set from block 0 0 0 Text1
 scoreboard players operation $theme v_theme_3 = $rand random
 function game:battle/voting_period

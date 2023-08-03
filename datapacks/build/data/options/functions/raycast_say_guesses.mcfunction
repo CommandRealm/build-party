@@ -1,0 +1,3 @@
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=remove,tag=check_say_guesses] run scoreboard players remove $number announce_guesses 2
+execute if entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_say_guesses] run function options:add_say_guesses
+execute unless entity @e[distance=..0.05,type=area_effect_cloud,tag=check_sign,tag=check_say_guesses] if entity @s[distance=..6] positioned ^ ^ ^0.05 run function options:raycast_say_guesses

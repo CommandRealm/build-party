@@ -11,8 +11,8 @@ kill @e[type=tnt_minecart]
 kill @e[type=wither]
 execute as @a[scores={o_book=1..}] at @s run function game:check_o_book
 kill @e[type=item,nbt={Item:{id:"minecraft:barrier"}}]
-execute as @a[scores={hat=1..16}] at @s unless entity @s[nbt={Inventory:[{Slot:103b,tag:{display:{Lore:['[{"text":"Hat","color":"blue","bold":true,"italic":false}]']}}}]}] run function cosmetic:equip_hat
-execute if entity @a[scores={hat=17}] run function cosmetic:head_bulge
-execute if entity @a[scores={hat=18}] run function cosmetic:rainbow_glass
+execute as @a[scores={sel_hat=1..16},tag=!builder] at @s unless entity @s[nbt={Inventory:[{Slot:103b,tag:{display:{Lore:['[{"text":"Hat","color":"blue","bold":true,"italic":false}]']}}}]}] run function cosmetic:equip_hat
+execute if entity @a[scores={sel_hat=17}] run function cosmetic:head_bulge
+execute if entity @a[scores={sel_hat=18}] run function cosmetic:rainbow_glass
 ##execute as @a[tag=n_suit] at @s unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:netherite_boots",tag:{suit:1}},{Slot:101b,id:"minecraft:netherite_leggings",tag:{suit:1}},{Slot:102b,id:"minecraft:netherite_chestplate",tag:{suit:1}}]}] run function cosmetic:equip_n_suit
 advancement grant @a[advancements={custom/unlock_music=true,custom/unlock_hat=true,custom/unlock_sound=true,custom/unlock_prefix=true,completionist/completionist=false}] only minecraft:completionist/completionist

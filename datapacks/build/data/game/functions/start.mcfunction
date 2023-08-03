@@ -1,3 +1,4 @@
+
 scoreboard players set $time startup_timer -1
 tag @a[scores={ready=1}] add playing
 scoreboard players set @a[tag=playing] team_swap 100
@@ -7,6 +8,10 @@ scoreboard players set @a[tag=playing] adv_wolf 0
 scoreboard players set @a[scores={ready=1}] ready 0
 scoreboard players set $game state 1
 clear @a[tag=playing]
+
+scoreboard players set $rounds_played number 0
+execute store result score $rounds_to_play number if entity @a[tag=playing]
+
 execute if score $number mode matches 0 run function game:guess/game_start
 execute if score $number mode matches 1 run function game:battle/game_start
 scoreboard objectives remove player_id
@@ -31,3 +36,4 @@ setblock 0 69 12 air
 
 
 data modify entity @e[type=area_effect_cloud,tag=start_button_text,limit=1] CustomNameVisible set value 0b
+

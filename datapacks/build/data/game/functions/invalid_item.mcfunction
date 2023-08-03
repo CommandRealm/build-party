@@ -61,6 +61,19 @@ clear @s minecraft:zombie_spawn_egg
 clear @s minecraft:zombie_horse_spawn_egg
 clear @s minecraft:zombified_piglin_spawn_egg
 clear @s minecraft:zombie_villager_spawn_egg
+
+clear @s minecraft:zoglin_spawn_egg
+clear @s minecraft:piglin_brute_spawn_egg
+clear @s minecraft:axolotl_spawn_egg
+clear @s minecraft:glow_squid_spawn_egg
+clear @s minecraft:goat_spawn_egg
+clear @s minecraft:strider_spawn_egg
+
+clear @s minecraft:allay_spawn_egg
+clear @s minecraft:frog_spawn_egg
+clear @s minecraft:tadpole_spawn_egg
+clear @s minecraft:warden_spawn_egg
+
 clear @s minecraft:bee_nest
 clear @s minecraft:beehive
 clear @s minecraft:command_block

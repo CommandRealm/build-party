@@ -21,3 +21,9 @@ execute if entity @s[scores={o_book=20}] run function game:o_book_20
 execute if entity @s[scores={o_book=21}] run function game:o_book_21
 execute if entity @s[scores={o_book=22}] run function game:o_book_22
 execute if entity @s[scores={o_book=23}] run function game:o_book_23
+
+execute if entity @s[scores={o_book=24}] run function game:o_book_24
+execute if entity @s[scores={o_book=25}] run function game:o_book_25
+execute if entity @s[scores={o_book=26}] run function game:o_book_26
+execute if entity @s[scores={o_book=27}] run function game:o_book_27
+execute if entity @s[scores={o_book=28}] run function game:o_book_28

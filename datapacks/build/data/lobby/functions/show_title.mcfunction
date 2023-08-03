@@ -6,10 +6,34 @@ execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_detai
 execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=focii,type=armor_stand] run title @s title {"text":"Focii_","color":"gold"}
 
 execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=pl,type=armor_stand] run title @s subtitle {"text":"Project Lead, Senior Programmer, & Manager","color":"white"}
-execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=hippeh,type=armor_stand] run title @s subtitle {"text":"Builder and Manager","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=hippeh,type=armor_stand] run title @s subtitle {"text":"Senior Builder and Manager","color":"white"}
 execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=j70,type=armor_stand] run title @s subtitle {"text":"Senior Builder","color":"white"}
 execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=regsbody,type=armor_stand] run title @s subtitle {"text":"Artist and Builder","color":"white"}
 execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=focii,type=armor_stand] run title @s subtitle {"text":"Builder","color":"white"}
+
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_bodi,type=armor_stand] run title @s title {"text":"Bodi25","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_urgle,type=armor_stand] run title @s title {"text":"Urgle","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_capt,type=armor_stand] run title @s title {"text":"Captonium","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_check,type=armor_stand] run title @s title {"text":"CheckMC","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_tina,type=armor_stand] run title @s title {"text":"tinaaaa420","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_chipc,type=armor_stand] run title @s title {"text":"ChipChase","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_owen,type=armor_stand] run title @s title {"text":"OwenEquinox","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_deemo,type=armor_stand] run title @s title {"text":"SmallDeemo","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_mark,type=armor_stand] run title @s title {"text":"TheRangerMark","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_calverin,type=armor_stand] run title @s title {"text":"Calverin","color":"gold"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_typs,type=armor_stand] run title @s title {"text":"TheTypicalMex","color":"gold"}
+
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_bodi,type=armor_stand] run title @s subtitle {"text":"Builder","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_urgle,type=armor_stand] run title @s subtitle {"text":"Builder","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_capt,type=armor_stand] run title @s subtitle {"text":"Builder","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_check,type=armor_stand] run title @s subtitle {"text":"Programmer","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_tina,type=armor_stand] run title @s subtitle {"text":"Helper","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_chipc,type=armor_stand] run title @s subtitle {"text":"Helper","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_owen,type=armor_stand] run title @s subtitle {"text":"Helper","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_deemo,type=armor_stand] run title @s subtitle {"text":"Helper","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_mark,type=armor_stand] run title @s subtitle {"text":"Helper","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_calverin,type=armor_stand] run title @s subtitle {"text":"Helper","color":"white"}
+execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,tag=credits_typs,type=armor_stand] run title @s subtitle {"text":"Helper","color":"white"}
 
 execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,type=item_frame] run title @s title {"text":" "}
 execute at @e[tag=show_details,sort=nearest,limit=1] if entity @e[tag=show_details,distance=0..0.25,type=item_frame,tag=painting_secret] run title @s subtitle {"text":"The Secret","color":"blue"}
