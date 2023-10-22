@@ -4,7 +4,7 @@ scoreboard players set @s menu 2
 item replace entity @s enderchest.10 with netherite_helmet{echest: 1, HideFlags: 63, display: {Name: '[{"text":"Hats","italic":false,"color":"gold"}]'}}
 item replace entity @s enderchest.12 with music_disc_wait{echest: 1, HideFlags: 63, display: {Name: '[{"text":"Music Tracks","italic":false,"color":"blue"}]'}}
 item replace entity @s enderchest.14 with amethyst_shard{echest: 1, HideFlags: 63, display: {Name: '[{"text":"Correct ","italic":false,"color":"light_purple"},{"text":"Guess","italic":false,"color":"dark_purple"},{"text":" Sounds","italic":false,"color":"light_purple"}]'}}
-item replace entity @s enderchest.16 with gold_nugget{Enchantments:[{id:"x",lvl:1}],echest:1,HideFlags:63,display:{Name:'[{"text":"Advancement Unlocks","italic":false,"color":"gold"}]'}}
+item replace entity @s enderchest.16 with gold_nugget{Enchantments:[{}],echest:1,HideFlags:63,display:{Name:'[{"text":"Advancement Unlocks","italic":false,"color":"gold"}]'}}
 item replace entity @s enderchest.18 with barrier{HideFlags: 63, echest: 1, display: {Name: '{"text":"Back","italic":false,"color":"red"}'}} 
 
 
