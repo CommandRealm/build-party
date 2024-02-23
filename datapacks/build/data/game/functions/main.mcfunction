@@ -24,13 +24,13 @@ execute as @a[nbt={RootVehicle:{Entity:{id:"minecraft:strider"}}}] at @s run kil
 execute as @e[type=area_effect_cloud,tag=sponsor_marker] at @s run function game:limit_entities
 execute as @a[gamemode=spectator] at @s if entity @s[y=44,distance=..20] run function game:guess/spectator_leave
 execute as @a[gamemode=spectator] at @s if entity @s[y=130,distance=..20] run function game:guess/spectator_leave
-execute as @a[tag=builder,advancements={game:custom/go_swimming=false}] at @s if block ~ ~ ~ water run advancement grant @s only game:custom/go_swimming
-execute as @a[tag=builder,advancements={game:custom/eat_cookie=false},nbt={SelectedItem:{id:"minecraft:cookie"}}] run advancement grant @s only game:custom/eat_cookie
-execute as @a[tag=builder,advancements={game:custom/sign_book=false},nbt={SelectedItem:{id:"minecraft:writable_book"}}] run advancement grant @s only game:custom/sign_book
-execute as @a[tag=builder,advancements={game:custom/bedrock_box=false}] at @s if block ~ ~-1 ~ bedrock if block ~ ~2 ~ bedrock if block ~1 ~ ~ bedrock if block ~1 ~1 ~ bedrock if block ~-1 ~ ~ bedrock if block ~-1 ~1 ~ bedrock if block ~ ~ ~1 bedrock if block ~ ~1 ~1 bedrock if block ~1 ~ ~ bedrock if block ~ ~1 ~-1 bedrock if block ~1 ~ ~ bedrock if block ~1 ~1 ~ bedrock run advancement grant @s only game:custom/bedrock_box
-execute as @a[tag=builder,advancements={game:custom/jump_on_bed=false}] at @s unless block ~ ~ ~ #beds run scoreboard players reset @s intro_jump
-execute as @a[tag=builder,advancements={game:custom/jump_on_bed=false},scores={intro_jump=1..}] at @s if block ~ ~ ~ #beds run advancement grant @s only game:custom/jump_on_bed
-advancement grant @a[advancements={game:custom/light_tnt=true,game:custom/go_swimming=true,game:custom/eat_cookie=true,game:custom/sign_book=true,game:custom/bedrock_box=true,game:custom/jump_on_bed=true,game:custom/unlock_music=false}] only game:custom/unlock_music
+execute as @a[tag=builder,advancements={advancements:custom/go_swimming=false}] at @s if block ~ ~ ~ water run advancement grant @s only advancements:custom/go_swimming
+execute as @a[tag=builder,advancements={advancements:custom/eat_cookie=false},nbt={SelectedItem:{id:"minecraft:cookie"}}] run advancement grant @s only advancements:custom/eat_cookie
+execute as @a[tag=builder,advancements={advancements:custom/sign_book=false},nbt={SelectedItem:{id:"minecraft:writable_book"}}] run advancement grant @s only advancements:custom/sign_book
+execute as @a[tag=builder,advancements={advancements:custom/bedrock_box=false}] at @s if block ~ ~-1 ~ bedrock if block ~ ~2 ~ bedrock if block ~1 ~ ~ bedrock if block ~1 ~1 ~ bedrock if block ~-1 ~ ~ bedrock if block ~-1 ~1 ~ bedrock if block ~ ~ ~1 bedrock if block ~ ~1 ~1 bedrock if block ~1 ~ ~ bedrock if block ~ ~1 ~-1 bedrock if block ~1 ~ ~ bedrock if block ~1 ~1 ~ bedrock run advancement grant @s only advancements:custom/bedrock_box
+execute as @a[tag=builder,advancements={advancements:custom/jump_on_bed=false}] at @s unless block ~ ~ ~ #beds run scoreboard players reset @s intro_jump
+execute as @a[tag=builder,advancements={advancements:custom/jump_on_bed=false},scores={intro_jump=1..}] at @s if block ~ ~ ~ #beds run advancement grant @s only advancements:custom/jump_on_bed
+advancement grant @a[advancements={advancements:custom/light_tnt=true,advancements:custom/go_swimming=true,advancements:custom/eat_cookie=true,advancements:custom/sign_book=true,advancements:custom/bedrock_box=true,advancements:custom/jump_on_bed=true,advancements:custom/unlock_music=false}] only advancements:custom/unlock_music
 
 scoreboard players enable @a[tag=playing] hat
 execute as @a[tag=playing,tag=builder] at @s unless score @s hat matches 0 run function game:get_hat

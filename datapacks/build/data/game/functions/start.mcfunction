@@ -26,7 +26,7 @@ bossbar set minecraft:lobby players @a[tag=!playing]
 tag @a[tag=playing] remove reset_movement
 tag @a[tag=playing] remove replace_hat
 scoreboard players add @a[tag=playing] stats_played 1
-advancement grant @a[tag=playing] only game:custom/play_game
+advancement grant @a[tag=playing] only advancements:custom/play_game
 
 advancement revoke @a only game:inventory_changed
 

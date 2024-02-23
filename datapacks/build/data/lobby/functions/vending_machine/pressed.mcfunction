@@ -19,5 +19,5 @@ execute if score $rand vending_machine matches 11 run give @p potion{no_echest:1
 execute if score $rand vending_machine matches 12 run give @p potion{no_echest:1,HideFlags:63,display:{Name:'{"text":"Bottled Water","italic":false,"color":"blue"}'},vending_machine:2,Potion:"minecraft:water"}
 execute if score $rand vending_machine matches 13 run give @p potion{no_echest:1,HideFlags:63,display:{Name:'{"text":"Lemonade","italic":false,"color":"yellow"}'},vending_machine:2,CustomPotionColor:16770048}
 execute if score $rand vending_machine matches 14 run give @p potion{no_echest:1,HideFlags:63,display:{Name:'{"text":"Smoothie","italic":false,"color":"#d180dd"}'},vending_machine:2,CustomPotionColor:13730013}
-advancement grant @p only game:custom/use_vending_machine
+advancement grant @p only advancements:custom/use_vending_machine
 playsound minecraft:block.dispenser.dispense master @p ~ ~ ~ 100000 1

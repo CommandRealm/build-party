@@ -48,15 +48,15 @@ execute as @a[x=0,y=67,z=13,distance=..7,tag=!playing,nbt={EnderItems:[{tag:{no_
 
 execute if entity @a[tag=replace_hat,tag=!playing] run function lobby:hat/active
 
-advancement grant @a[x=-1,y=73,z=57,dx=2,dy=3] only game:custom/visit_museum
-advancement grant @a[x=-33,y=73,z=54,dx=4,dy=8,dz=4] only game:custom/visit_dragon
-advancement grant @a[x=27,y=88,z=47,dx=8,dz=3,dy=3] only game:custom/visit_cr_painting
-advancement grant @a[x=-24,y=67,z=-9,dx=0,dy=1] only game:custom/visit_bus
-advancement grant @a[x=-48,y=67,z=7,dx=0,dy=1] only game:custom/visit_truck
-advancement grant @a[x=46,y=66,z=-9,dz=18,dx=6,dy=10] only game:custom/find_cr
-advancement grant @a[x=19,y=63,z=-19,dx=0] only game:custom/visit_secret
-advancement grant @a[advancements={game:custom/visit_museum=true,game:custom/use_vending_machine=true,game:custom/visit_dragon=true,game:custom/visit_cr_painting=true,game:custom/visit_bus=true,game:custom/visit_truck=true,game:custom/find_cr=true,game:custom/check_out_socials=true,game:custom/visit_secret=true,game:custom/unlock_prefix=false}] only game:custom/unlock_prefix
-execute if entity @a[advancements={completionist/completionist=true},tag=!playing] run function completionist:completionist_helix
+advancement grant @a[x=-1,y=73,z=57,dx=2,dy=3] only advancements:custom/visit_museum
+advancement grant @a[x=-33,y=73,z=54,dx=4,dy=8,dz=4] only advancements:custom/visit_dragon
+advancement grant @a[x=27,y=88,z=47,dx=8,dz=3,dy=3] only advancements:custom/visit_cr_painting
+advancement grant @a[x=-24,y=67,z=-9,dx=0,dy=1] only advancements:custom/visit_bus
+advancement grant @a[x=-48,y=67,z=7,dx=0,dy=1] only advancements:custom/visit_truck
+advancement grant @a[x=46,y=66,z=-9,dz=18,dx=6,dy=10] only advancements:custom/find_cr
+advancement grant @a[x=19,y=63,z=-19,dx=0] only advancements:custom/visit_secret
+advancement grant @a[advancements={advancements:custom/visit_museum=true,advancements:custom/use_vending_machine=true,advancements:custom/visit_dragon=true,advancements:custom/visit_cr_painting=true,advancements:custom/visit_bus=true,advancements:custom/visit_truck=true,advancements:custom/find_cr=true,advancements:custom/check_out_socials=true,advancements:custom/visit_secret=true,advancements:custom/unlock_prefix=false}] only advancements:custom/unlock_prefix
+execute if entity @a[advancements={advancements:completionist/completionist=true},tag=!playing] run function completionist:completionist_helix
 
 ##Dropping the ready book
 execute as @a[tag=!playing,gamemode=adventure,scores={drop_ready_book=1..}] at @s run function lobby:drop_ready_book

@@ -15,4 +15,4 @@ execute as @a[scores={sel_hat=1..16},tag=!builder] at @s unless entity @s[nbt={I
 execute if entity @a[scores={sel_hat=17}] run function cosmetic:head_bulge
 execute if entity @a[scores={sel_hat=18}] run function cosmetic:rainbow_glass
 ##execute as @a[tag=n_suit] at @s unless entity @s[nbt={Inventory:[{Slot:100b,id:"minecraft:netherite_boots",tag:{suit:1}},{Slot:101b,id:"minecraft:netherite_leggings",tag:{suit:1}},{Slot:102b,id:"minecraft:netherite_chestplate",tag:{suit:1}}]}] run function cosmetic:equip_n_suit
-advancement grant @a[advancements={game:custom/unlock_music=true,game:custom/unlock_hat=true,game:custom/unlock_sound=true,game:custom/unlock_prefix=true,completionist/completionist=false}] only minecraft:completionist/completionist
+advancement grant @a[advancements={advancements:custom/unlock_music=true,advancements:custom/unlock_hat=true,advancements:custom/unlock_sound=true,advancements:custom/unlock_prefix=true,advancements:completionist/completionist=false}] only advancements:completionist/completionist

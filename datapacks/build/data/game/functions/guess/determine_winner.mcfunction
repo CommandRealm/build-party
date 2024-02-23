@@ -18,7 +18,7 @@ execute if score $number check_tie matches 1 run tellraw @a [{"text":" | ","colo
 execute if score $number check_tie matches 2.. run tellraw @a [{"text":" | ","color":"gold","bold":true},{"selector":"@a[scores={fake_points=0},tag=playing]","color":"gold","bold":false},{"text":" have tied for the win in Build Party!","color":"yellow","bold":false}]
 execute as @a[scores={fake_points=0},tag=playing] run tellraw @a [{"text":"\nVictor: ","color":"yellow"},{"selector":"@s","color":"gold"},{"text":" score: "},{"score":{"objective":"points","name":"@s"}}]
 execute as @r[scores={fake_points=0},tag=playing,tag=!got_placement] at @s run function game:clone_build_to_lobby
-advancement grant @a[scores={fake_points=0},tag=playing] only game:custom/win_guess
+advancement grant @a[scores={fake_points=0},tag=playing] only advancements:custom/win_guess
 tag @a[scores={fake_points=0},tag=playing,tag=!got_placement] add just_won
 
 tag @a[scores={fake_points=0},tag=playing] add got_placement
