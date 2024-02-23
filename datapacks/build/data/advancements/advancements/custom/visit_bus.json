@@ -1,1 +1,25 @@
-{"display":{"icon":{"item":"minecraft:smooth_quartz"},"title":{"text":"I am now the bus driver!","color":"#7b65ff","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Hop inside the bus.","color":"#5c4bc7","bold":false}},"parent":"game:custom/visit_cr_painting","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:smooth_quartz"
+        },
+        "title": {
+            "text": "I am now the bus driver!",
+            "color": "#7b65ff",
+            "bold": true
+        },
+        "show_toast": true,
+        "announce_to_chat": false,
+        "description": {
+            "text": "Hop inside the bus.",
+            "color": "#5c4bc7",
+            "bold": false
+        }
+    },
+    "parent": "advancements:custom/visit_cr_painting",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}
