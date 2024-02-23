@@ -1,0 +1,52 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:grass_block"
+        },
+        "title": {
+            "text": "BUILD",
+            "color": "yellow",
+            "bold": true,
+            "extra": [
+                {
+                    "text": " PARTY",
+                    "color": "gold",
+                    "bold": true
+                }
+            ]
+        },
+        "description": {
+            "text": "By the ",
+            "color": "white",
+            "underlined": false,
+            "extra": [
+                {
+                    "text": "Command",
+                    "color": "aqua",
+                    "bold": true,
+                    "extra": [
+                        {
+                            "text": " Realm",
+                            "color": "dark_aqua",
+                            "extra": [
+                                {
+                                    "text": " Team",
+                                    "bold": false,
+                                    "color": "white"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "background": "minecraft:textures/block/black_concrete.png",
+        "show_toast": false,
+        "announce_to_chat": "false"
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

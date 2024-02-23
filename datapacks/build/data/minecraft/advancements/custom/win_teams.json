@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:white_concrete"},"title":{"text":"Teamwork = Best work!","color":"white","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Win a team game of \"versus\" mode.","color":"gray","bold":false}},"parent":"custom/win_versus","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

@@ -214,7 +214,6 @@
 {"type":"minecraft:item","name":"minecraft:nether_bricks"},
 {"type":"minecraft:item","name":"minecraft:nether_brick_fence"},
 {"type":"minecraft:item","name":"minecraft:nether_brick_stairs"},
-{"type":"minecraft:item","name":"minecraft:nether_wart"},
 {"type":"minecraft:item","name":"minecraft:enchanting_table"},
 {"type":"minecraft:item","name":"minecraft:brewing_stand"},
 {"type":"minecraft:item","name":"minecraft:cauldron"},

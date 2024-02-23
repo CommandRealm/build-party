@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:flower_banner_pattern"},"title":{"text":"Definitely Interesting","color":"red","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Unlock access to all \"sponsorships.\"","color":"dark_red","bold":false}},"parent":"custom/five_s_offers","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:trident"},"title":{"text":"Ready For Summer","color":"blue","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Go swimming while building.","color":"dark_aqua","bold":false}},"parent":"game:custom/light_tnt","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

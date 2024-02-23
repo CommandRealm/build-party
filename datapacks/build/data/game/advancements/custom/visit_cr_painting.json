@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:red_terracotta"},"title":{"text":"Who is that?","color":"#ff5d65","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Visit the painting with the Command Realm team.","color":"#bb484d","bold":false}},"parent":"game:custom/visit_dragon","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

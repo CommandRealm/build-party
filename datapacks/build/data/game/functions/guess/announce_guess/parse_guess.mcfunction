@@ -2,6 +2,7 @@
 
 execute store result score $calculate calculate run data get storage minecraft:guess full_guess
 
+# Only checks for 0 to 25 characters, 26+ will throw an error
 execute if score $calculate calculate matches 176 run data modify storage minecraft:guess announce_guess set string storage minecraft:guess full_guess 0 1
 execute if score $calculate calculate matches 177 run data modify storage minecraft:guess announce_guess set string storage minecraft:guess full_guess 0 2
 execute if score $calculate calculate matches 178 run data modify storage minecraft:guess announce_guess set string storage minecraft:guess full_guess 0 3
@@ -26,7 +27,14 @@ execute if score $calculate calculate matches 196 run data modify storage minecr
 execute if score $calculate calculate matches 197 run data modify storage minecraft:guess announce_guess set string storage minecraft:guess full_guess 0 22
 execute if score $calculate calculate matches 198 run data modify storage minecraft:guess announce_guess set string storage minecraft:guess full_guess 0 23
 execute if score $calculate calculate matches 199 run data modify storage minecraft:guess announce_guess set string storage minecraft:guess full_guess 0 24
+execute if score $calculate calculate matches 200 run data modify storage minecraft:guess announce_guess set string storage minecraft:guess full_guess 0 25
+execute if score $calculate calculate matches 176..200 run function game:guess/announce_guess/tellraw
 
-function game:guess/announce_guess/tellraw
+# Too many characters or too few characters
+execute unless score $calculate calculate matches 176..200 run data modify storage minecraft:guess announce_guess set value " "
+execute unless score $calculate calculate matches 176..200 run playsound block.dispenser.fail master @s ~ ~ ~ 1 0.5
+execute if score $calculate calculate matches ..175 run tellraw @s ["",{"text":"- ","color":"dark_gray"},{"text":"Your guess was too short!","color":"red"}]
+execute if score $calculate calculate matches 201.. run tellraw @s ["",{"text":"- ","color":"dark_gray"},{"text":"Your guess was too long! Anything over 25 characters is simply superfluous!","color":"red"}]
+
 
 

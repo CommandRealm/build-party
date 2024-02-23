@@ -16,11 +16,11 @@ execute as @a[scores={fake_points=0},tag=playing,tag=!got_placement,limit=1,team
 tag @r[scores={fake_points=0},tag=playing,tag=!got_placement] add lobby_display
 execute as @r[scores={fake_points=0},tag=playing,tag=!got_placement,tag=lobby_display] at @s run function game:clone_build_to_lobby
 execute as @r[scores={fake_points=0},tag=playing,tag=!got_placement,tag=lobby_display] at @s run function game:battle/teams/color_to_lobby
-execute as @a[scores={fake_points=0},team=blue] run advancement grant @a[tag=playing,team=blue] only minecraft:custom/win_teams
-execute as @a[scores={fake_points=0},team=orange] run advancement grant @a[tag=playing,team=orange] only minecraft:custom/win_teams
-execute as @a[scores={fake_points=0},team=green] run advancement grant @a[tag=playing,team=green] only minecraft:custom/win_teams
-execute as @a[scores={fake_points=0},team=pink] run advancement grant @a[tag=playing,team=pink] only minecraft:custom/win_teams
-execute as @a[scores={fake_points=0},team=gray] run advancement grant @a[tag=playing,team=gray] only minecraft:custom/win_teams
+execute as @a[scores={fake_points=0},team=blue] run advancement grant @a[tag=playing,team=blue] only game:custom/win_teams
+execute as @a[scores={fake_points=0},team=orange] run advancement grant @a[tag=playing,team=orange] only game:custom/win_teams
+execute as @a[scores={fake_points=0},team=green] run advancement grant @a[tag=playing,team=green] only game:custom/win_teams
+execute as @a[scores={fake_points=0},team=pink] run advancement grant @a[tag=playing,team=pink] only game:custom/win_teams
+execute as @a[scores={fake_points=0},team=gray] run advancement grant @a[tag=playing,team=gray] only game:custom/win_teams
 tag @a remove lobby_display
 tag @a[scores={fake_points=0},tag=playing,tag=!got_placement] add got_placement
 function game:battle/teams/help_determine_winner

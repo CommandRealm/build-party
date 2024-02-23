@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:apple"},"title":{"text":"Snack Time","color":"#00ffa8","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Obtain food from a vending machine.","color":"#03895b","bold":false}},"parent":"custom/visit_museum","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

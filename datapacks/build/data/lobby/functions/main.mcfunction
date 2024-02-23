@@ -48,14 +48,14 @@ execute as @a[x=0,y=67,z=13,distance=..7,tag=!playing,nbt={EnderItems:[{tag:{no_
 
 execute if entity @a[tag=replace_hat,tag=!playing] run function lobby:hat/active
 
-advancement grant @a[x=-1,y=73,z=57,dx=2,dy=3] only minecraft:custom/visit_museum
-advancement grant @a[x=-33,y=73,z=54,dx=4,dy=8,dz=4] only minecraft:custom/visit_dragon
-advancement grant @a[x=27,y=88,z=47,dx=8,dz=3,dy=3] only minecraft:custom/visit_cr_painting
-advancement grant @a[x=-24,y=67,z=-9,dx=0,dy=1] only minecraft:custom/visit_bus
-advancement grant @a[x=-48,y=67,z=7,dx=0,dy=1] only minecraft:custom/visit_truck
-advancement grant @a[x=46,y=66,z=-9,dz=18,dx=6,dy=10] only minecraft:custom/find_cr
-advancement grant @a[x=19,y=63,z=-19,dx=0] only minecraft:custom/visit_secret
-advancement grant @a[advancements={custom/visit_museum=true,custom/use_vending_machine=true,custom/visit_dragon=true,custom/visit_cr_painting=true,custom/visit_bus=true,custom/visit_truck=true,custom/find_cr=true,custom/check_out_socials=true,custom/visit_secret=true,custom/unlock_prefix=false}] only minecraft:custom/unlock_prefix
+advancement grant @a[x=-1,y=73,z=57,dx=2,dy=3] only game:custom/visit_museum
+advancement grant @a[x=-33,y=73,z=54,dx=4,dy=8,dz=4] only game:custom/visit_dragon
+advancement grant @a[x=27,y=88,z=47,dx=8,dz=3,dy=3] only game:custom/visit_cr_painting
+advancement grant @a[x=-24,y=67,z=-9,dx=0,dy=1] only game:custom/visit_bus
+advancement grant @a[x=-48,y=67,z=7,dx=0,dy=1] only game:custom/visit_truck
+advancement grant @a[x=46,y=66,z=-9,dz=18,dx=6,dy=10] only game:custom/find_cr
+advancement grant @a[x=19,y=63,z=-19,dx=0] only game:custom/visit_secret
+advancement grant @a[advancements={game:custom/visit_museum=true,game:custom/use_vending_machine=true,game:custom/visit_dragon=true,game:custom/visit_cr_painting=true,game:custom/visit_bus=true,game:custom/visit_truck=true,game:custom/find_cr=true,game:custom/check_out_socials=true,game:custom/visit_secret=true,game:custom/unlock_prefix=false}] only game:custom/unlock_prefix
 execute if entity @a[advancements={completionist/completionist=true},tag=!playing] run function completionist:completionist_helix
 
 ##Dropping the ready book

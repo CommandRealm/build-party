@@ -62,7 +62,7 @@ execute as @a[tag=playing,tag=builder,scores={music=6}] at @s run playsound mine
 execute as @a[tag=playing,tag=builder,scores={music=7}] at @s run playsound minecraft:music_disc.mellohi record @a[tag=playing,tag=!no_music] ~ ~ ~ 100000 0
 execute as @a[tag=playing,tag=builder,scores={music=8}] at @s run playsound minecraft:music_disc.pigstep record @a[tag=playing,tag=!no_music] ~ ~ ~ 100000 1
 execute as @a[tag=playing,tag=builder,scores={music=9}] at @s run playsound minecraft:music_disc.pigstep record @a[tag=playing,tag=!no_music] ~ ~ ~ 100000 1.15
-advancement grant @a[tag=playing,tag=builder] only minecraft:custom/visit_sponsor
+advancement grant @a[tag=playing,tag=builder] only game:custom/visit_sponsor
 
 scoreboard players set $30_sec game 600
 

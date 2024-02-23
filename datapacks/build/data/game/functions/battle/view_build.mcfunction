@@ -22,7 +22,7 @@ bossbar set minecraft:timer max 400
 bossbar set minecraft:timer value 400
 playsound minecraft:block.note_block.pling master @a ~ ~ ~ 1000000 0
 playsound minecraft:block.note_block.guitar master @a ~ ~ ~ 1000000 0
-execute if score $number team matches 1 run advancement grant @a[tag=playing,tag=show_build] only minecraft:custom/visit_sponsor
+execute if score $number team matches 1 run advancement grant @a[tag=playing,tag=show_build] only game:custom/visit_sponsor
 tellraw @a[tag=playing] {"text":"\n"}
 execute if score $number team matches 1 run tellraw @a[tag=playing,tag=!show_build] [{"text":"Please rate ","color":"yellow"},{"selector":"@a[tag=show_build]","color":"gold"},{"text":"'s","color":"gold"},{"text":" build.","color":"yellow"}]
 execute if score $number team matches 2.. run function game:battle/teams/rating_time

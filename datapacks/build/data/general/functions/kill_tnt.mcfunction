@@ -1,2 +1,2 @@
-advancement grant @p[gamemode=creative] only minecraft:custom/light_tnt
+advancement grant @p[gamemode=creative] only game:custom/light_tnt
 kill @s

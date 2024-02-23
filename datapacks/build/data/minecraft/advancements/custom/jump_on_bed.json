@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:red_bed"},"title":{"text":"Woo!","color":"red","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Jump on a bed.","color":"light_purple","bold":false}},"parent":"custom/bedrock_box","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}
