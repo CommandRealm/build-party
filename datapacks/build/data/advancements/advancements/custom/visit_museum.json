@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:paper"},"title":{"text":"Taking a Tour","color":"#baa565","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Walk inside the museum.","color":"#7b6d43","bold":false}},"parent":"game:custom/root","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

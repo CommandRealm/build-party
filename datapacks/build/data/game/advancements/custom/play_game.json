@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:filled_map"},"title":{"text":"I'm the newbie!","color":"yellow","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Play a game of Build Party.","color":"gold","bold":false}},"parent":"game:custom/root","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

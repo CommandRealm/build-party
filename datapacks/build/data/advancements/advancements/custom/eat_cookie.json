@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:cookie"},"title":{"text":"It's so yummy!","color":"yellow","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Hold a cookie while building.","color":"gold","bold":false}},"parent":"game:custom/go_swimming","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

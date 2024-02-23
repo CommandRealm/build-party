@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:diamond_block"},"title":{"text":"Winner!","color":"aqua","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Win five matches of Build Party.","color":"dark_aqua","bold":false}},"parent":"game:custom/win_teams","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

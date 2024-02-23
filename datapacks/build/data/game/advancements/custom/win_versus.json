@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:blue_concrete"},"title":{"text":"Winning the Fights","color":"dark_blue","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Win a solo game of \"versus\" mode.","color":"#3a56ff","bold":false}},"parent":"game:custom/win_guess","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

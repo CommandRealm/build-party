@@ -1,0 +1,1 @@
+{"display":{"icon":{"item":"minecraft:flower_banner_pattern"},"title":{"text":"Here I am!","color":"blue","bold":true},"show_toast":true,"announce_to_chat":false,"description":{"text":"Visit your \"sponsorship.\"","color":"dark_blue","bold":false}},"parent":"game:custom/root","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}

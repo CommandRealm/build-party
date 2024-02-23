@@ -1,1 +1,0 @@
-{"display":{"icon":{"item":"minecraft:writable_book"},"title":{"text":"I guess I won!","color":"yellow","bold":true},"show_toast":true,"announce_to_chat":"false","description":{"text":"Win a game of \"guess\" mode.","color":"gold","bold":false}},"parent":"game:custom/play_game","criteria":{"impossible":{"trigger":"minecraft:impossible"}}}
